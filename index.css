@@ -1,14 +1,24 @@
 /* LEGACY STYLES */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.BoldText{
+  font-weight: bold;
+}
 
 /* SOLUTIONS */
-*{
-  font-family: 'Raleway', sans-serif;
+* {
+  font-family: "Raleway", sans-serif;
 }
-body{
+body {
+  overflow: hidden;
   background-color: hsl(228, 72%, 8%);
-  background-image: url('images/bg-desktop.svg');
+  background-image: url("images/bg-desktop.svg");
   background-position: bottom;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -17,7 +27,8 @@ body{
   color: #fff;
 }
 
-.Content{
+/* OPTIONS */
+.Content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,25 +37,135 @@ body{
   max-width: 60vw;
   margin: auto;
 }
-.Content__Options{
-  flex: 30%;
+.Content__Options {
+  display: flex;
+  flex-direction: column;
+  flex: 35%;
   height: 150px;
   margin-right: 15px;
-  background-color: hsl(228, 45%, 44%);
+  background-color: #1e2c69;
   border-radius: 10px 100px 10px 10px;
-  padding: 10px;
+  padding: 50px 50px 20px 50px;
   align-self: flex-end;
 }
-.Content__Status{
-  flex: 70%;
+.Content__Status {
+  flex: 65%;
   height: 100px;
-  background-color: hsl(228, 45%, 44%);
+  background-color: #1e2c69;
   border-radius: 10px;
-  padding: 10px;
+  padding: 25px;
   align-self: flex-end;
 }
 
-footer{
+.Content__Options_Logo{
+  margin-bottom: 30px;
+}
+
+.Content__Options_Icons{
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.Content__Options_Icons_Item{
+  padding: 10px;
+  background-color: #060c23;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Content__Status_Tooltip{
+  position: relative;
+  right: -320px;
+  bottom: 65px;
+}
+.Content__Status_Tooltip_Text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #292929;
+  position: absolute;
+  width:150px;
+  height:60px;
+  border-radius: 10px 10px 0 10px;
+  background-color: #fff;
+  padding-top: 6px;
+  text-align: center;
+}
+
+.Content__Status_Tooltip_Text p{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 35px;
+  margin: 0;
+  color: #0f1630;
+}
+.Content__Status_Tooltip_Text > p > span{
+  font-size: 12px;
+  font-weight: bold;
+  color: #939395;
+  margin-left: 5px;
+}
+
+.Content__Status_Tooltip_Text::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #ffffff;
+  border-bottom: 0px;
+  border-right: 0;
+  margin-left: -20px;
+  margin-bottom: -20px;
+}
+
+/* STATUS */
+.Content__Status_Info {
+  opacity: 0.8;
+}
+
+.Content__Status_Current {
+  background-color: #060c23;
+  width: 100%;
+  height: 20px;
+  border-radius: 15px;
+  padding: 3px;
+}
+.Used__Data{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: rgb(240,178,162);
+  background: linear-gradient(90deg, rgba(240,178,162,1) 0%, rgba(251,77,146,1) 100%); 
+  width: 82%;
+  height: 100%;
+  border-radius: 15px;
+  padding-right: 3px;
+}
+.Used__Data_Pointer{
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.Content__Status_Range {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Content__Status_Range p{
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+footer {
   position: absolute;
   width: 100%;
   text-align: center;

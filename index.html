@@ -21,15 +21,34 @@
     <main>
       <div class="Content">
         <div class="Content__Options">
-          <div><h2>Fylo</h2></div>
-          <div>
-            options
+          <div class="Content__Options_Logo">
+            <img src='./images/logo.svg' alt="logo" />
+          </div>
+          <div class="Content__Options_Icons">
+            <img class="Content__Options_Icons_Item" src='./images/icon-document.svg' alt="logo" />
+            <img class="Content__Options_Icons_Item" src='./images/icon-folder.svg' alt="logo" />
+            <img class="Content__Options_Icons_Item" src='./images/icon-upload.svg' alt="logo" />
           </div>
         </div>
         <div class="Content__Status">
-          <div><p>You’ve used 815 GB of your storage 185 GB Left 0 GB 1000 GB</p></div>
-          <div>STATUS</div>
-          <div>Range</div>
+          <div class="Content__Status_Tooltip">
+            <div class="Content__Status_Tooltip_Text">
+              <p class="wps1">185 <span>GB Left</span></p>
+            </div>
+          </div>
+          <div class="Content__Status_Info">
+            <p>You’ve used <span class="BoldText">815 GB</span> of your storage</p>
+          </div>
+          <div class="Content__Status_Current">
+            <!-- <input type="range" id="Status__Bar" name="points" min="0" max="1000">  -->
+            <div class="Used__Data">
+              <span class="Used__Data_Pointer"></span>
+            </div>
+          </div>
+          <div class="Content__Status_Range">
+            <p>0 GB</p>
+            <p>1000 GB</p>
+          </div>
         </div>
       </div>
     </main>
@@ -40,7 +59,7 @@
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by
-        <a href="dorianmorones.com/" target="_blank">Dorian Morones</a>.
+        <a href="https://www.dorianmorones.com/" target="_blank">Dorian Morones</a>.
       </div>
     </footer>
   </body>
